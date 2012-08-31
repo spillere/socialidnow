@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>Sidnlogin</name>
+    <version>2.0.0</version>
+    <creationDate>Aug. 2012</creationDate>
+    <author>JetWorks</author>
+    <authorEmail>contato@jetworks.com.br</authorEmail>
+    <authorUrl>http://www.jetworks.com.br</authorUrl>
+    <copyright>2012 Jetworks All Right.</copyright>
+    <license>GNU General Public License</license>
+    <description>Social Login</description>
+
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install/installsql.mysql.utf8.php</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file charset="utf8" driver="mysql">install/uninstallsql.mysql.utf8.php</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <file>sidnlogin.php</file>
+    </files>
+
+    <administration>
+        <menu>SocialID Now - Login</menu>
+
+
+        <files folder="admin">
+            <file>config.xml</file>
+            <folder>install</folder>
+            <folder>views</folder>
+        </files>
+    </administration>
+</install>

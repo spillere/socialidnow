@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+    <name>SocialIDNow - Login</name>
+    <author>Jetworks</author>
+    <creationDate>July 2012</creationDate>
+    <copyright>All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contato@jetworks.com.br</authorEmail>
+    <authorUrl>http://www.jetworks.com.br</authorUrl>
+    <version>1.5.0</version>
+    <description>Social ID Now - Login - www.socialidnow.com/login </description>
+    <files>
+        <filename module="mod_sidn_login">mod_sidn_login.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="Parâmetros">
+                <field
+					name="key"
+					type="text"
+					label="Social ID Key"
+					description="Social ID Key" />
+			    <field
+					name="key2"
+					type="text"
+					label="Social ID Key2"
+					description="Social ID Key2" />
+            </fieldset>
+            <fieldset
+				name="advanced">
+                <field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</install>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fields name="params">
+        <fieldset name="basic" label="Parâmetros">
+            <field name="api_secret" type="text" label="API Secret" description="API Secret" />
+            <field name="sidn_debug" type="text" label="Debug?" description="Sidn Debug" />
+        </fieldset>
+    </fields>
+</config>
